@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №1 — Основи HTML</title>
+    <link rel="stylesheet" href="../main/style.css">
+    <style>
+        form {
+          max-width: 500px;
+          margin: 20px auto;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          background: #f9fbff;
+        }
+        label {
+          display: block;
+          margin-top: 10px;
+          font-weight: bold;
+        }
+        input, select {
+          width: 100%;
+          padding: 8px;
+          margin-top: 5px;
+          border: 1px solid #aaa;
+          border-radius: 4px;
+          font-size: 1rem;
+        }
+        input[type="submit"] {
+          background: #004080;
+          color: white;
+          border: none;
+          margin-top: 15px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        input[type="submit"]:hover {
+          background: #0059b3;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Лабораторна робота №1 — Основи HTML</h1>
+    <nav>
+        <ul>
+            <li><a href="../main/index.html">Головна</a></li>
+            <li><a href="../main/labs.html">Список лабораторних</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Завдання</h2>
+        <ol>
+            <li>Створити HTML-документ для поточної лабораторної.</li>
+            <li>Додати посилання на сторінку зі списком лабораторних.</li>
+            <li>Створити форму реєстрації з полями для введення даних.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Форма реєстрації</h2>
+        <!-- Твоє унікальне посилання -->
+        <form action="https://webhook.site/ec5f32c5-5a88-4b06-b929-61a8c184daea" method="post">
+            <label for="fname">Ім’я:</label>
+            <input type="text" id="fname" name="first_name" required>
+
+            <label for="lname">Прізвище:</label>
+            <input type="text" id="lname" name="last_name" required>
+
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm">Підтвердження паролю:</label>
+            <input type="password" id="confirm" name="confirm_password" required>
+
+            <label for="birthday">Дата народження:</label>
+            <input type="date" id="birthday" name="birthday">
+
+            <label for="gender">Стать:</label>
+            <select id="gender" name="gender">
+                <option value="">Оберіть стать</option>
+                <option value="male">Чоловіча</option>
+                <option value="female">Жіноча</option>
+                <option value="other">Інша</option>
+            </select>
+
+            <input type="submit" value="Зареєструватися">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Антон Тімовський |
+        <a href="https://github.com/ANON435" target="_blank">Мій GitHub</a> |
+        <a href="mailto:antontimovski@gmail.com">antontimovski@gmail.com</a></p>
+</footer>
+</body>
+</html>
