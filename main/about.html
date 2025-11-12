@@ -1,10 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про мене — Антон Тімовський</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-container {
+          max-width: 800px;
+          margin: 40px auto;
+          padding: 20px;
+          background: #f8faff;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          text-align: center;
+        }
+        .about-container img {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-bottom: 15px;
+          border: 3px solid #004080;
+        }
+        .about-container h1 {
+          color: #004080;
+          margin-bottom: 10px;
+        }
+        .about-container p {
+          font-size: 1.1rem;
+          margin-bottom: 10px;
+          color: #333;
+        }
+        .about-container a {
+          color: #004080;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        .about-container a:hover {
+          text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
+<header>
+    <h1>Про мене</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="labs.html">Лабораторні роботи</a></li>
+            <li><a href="practices.html">Практичні роботи</a></li>
+        </ul>
+    </nav>
+</header>
 
+<main>
+    <div class="about-container">
+        <img src="../main/images/profile.jpg" alt="Фото Антона Тімовського">
+        <h1>Антон Тімовський</h1>
+        <p><strong>Студент спеціальності:</strong> Комп’ютерна інженерія</p>
+        <p><strong>Навчальний заклад:</strong> [Назва університету, факультет]</p>
+        <p><strong>Група:</strong> КІД-41</p>
+        <p>Мене цікавить веб-розробка, дизайн та програмування.
+            Цей сайт створений у межах навчальної дисципліни
+            <em>«Веб-технології та веб-дизайн»</em> для виконання лабораторних і практичних робіт.</p>
+
+        <hr>
+        <p>
+            <a href="https://github.com/ANON435" target="_blank">Мій GitHub</a> |
+            <a href="mailto:antontimovski@gmail.com">antontimovski@gmail.com</a>
+        </p>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Антон Тімовський | Усі права захищені</p>
+</footer>
 </body>
 </html>
