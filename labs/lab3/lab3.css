@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f1f1f1;
+}
+
+.yt-header {
+    height: 56px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.yt-left,
+.yt-center,
+.yt-right {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    width: 26px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.logo {
+    height: 24px;
+}
+
+.search-input {
+    width: 350px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+.search-btn {
+    padding: 8px 16px;
+    background: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.avatar {
+    background: #0084ff;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout {
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    font-size: 15px;
+    margin: 20px 0 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.sidebar li:hover {
+    background: #eee;
+}
+
+.sidebar .active {
+    background: #ddd;
+    font-weight: bold;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.categories {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cat {
+    padding: 8px 16px;
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.cat.active {
+    background: #000;
+    color: #fff;
+}
+
+.videos {
+    display: flex;
+    gap: 16px;
+}
+
+.video {
+    width: calc(33.333% - 12px);
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.thumb {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.video h4 {
+    font-size: 16px;
+    margin: 8px 10px 4px;
+}
+
+.video p {
+    font-size: 13px;
+    color: #606060;
+    margin-left: 10px;
+}

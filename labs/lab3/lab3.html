@@ -1,10 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>YouTube Copy – Lab 3</title>
+    <link rel="stylesheet" href="lab3.css">
 </head>
 <body>
+
+<header class="yt-header">
+    <div class="yt-left">
+        <img src="../main/icons/menu.svg" class="menu-icon" alt="Menu">
+        <img src="../main/icons/logo.png" class="logo" alt="YouTube">
+    </div>
+
+    <div class="yt-center">
+        <input type="text" class="search-input" placeholder="Пошук">
+        <button class="search-btn">🔍</button>
+    </div>
+
+    <div class="yt-right">
+        <button class="icon-btn">⬤</button>
+        <button class="icon-btn">🔔</button>
+        <div class="avatar">A</div>
+    </div>
+</header>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <ul>
+            <li class="active">🏠 Головна</li>
+            <li>🎞 Shorts</li>
+            <li>📺 Підписки</li>
+            <li>🎵 YouTube Music</li>
+        </ul>
+
+        <h3>Ви</h3>
+        <ul>
+            <li>👤 Ваш канал</li>
+            <li>🕓 Історія</li>
+            <li>▶ Ваші відео</li>
+            <li>📝 Плейлисти</li>
+            <li>⬇ Завантаження</li>
+        </ul>
+
+        <h3>Підписки</h3>
+        <ul>
+            <li>🟢 WAS Популярне</li>
+            <li>🟢 ROZETKA</li>
+            <li>🟢 Хайп</li>
+        </ul>
+    </aside>
+
+    <main class="content">
+
+        <div class="categories">
+            <button class="cat active">Усі</button>
+            <button class="cat">Ігри</button>
+            <button class="cat">Музика</button>
+            <button class="cat">Фільми</button>
+            <button class="cat">Новини</button>
+            <button class="cat">Прямі трансляції</button>
+        </div>
+
+        <section class="videos">
+
+            <article class="video">
+                <img src="../main/demo/1.jpg" class="thumb">
+                <h4>Як збільшиться борг України за годину?</h4>
+                <p>Економіка UA · 78 тис. переглядів · 3 дні тому</p>
+            </article>
+
+            <article class="video">
+                <img src="../main/demo/2.jpg" class="thumb">
+                <h4>Що робить журналіст? Професія майбутнього</h4>
+                <p>Новини 24 · 254 тис. переглядів · 1 тиждень тому</p>
+            </article>
+
+            <article class="video">
+                <img src="../main/demo/3.jpg" class="thumb">
+                <h4>GET STUFF DONE – мотивація для навчання</h4>
+                <p>One Tutorial · 1,3 млн переглядів · 2 роки тому</p>
+            </article>
+
+        </section>
+
+    </main>
+
+</div>
 
 </body>
 </html>
