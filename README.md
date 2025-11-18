@@ -4,4 +4,4 @@
 - [Практична робота №1](practices/practice1/practice1.html)
 - [Лабораторна робота №2 (CSS)](labs/lab2/lab2.css)
 - [Практична робота №2 (CSS)](practices/practice2/practice2.css)
-- [Лабораторна та практична робота №3](labs/lab3/lab3.html) та [lab3.css](labs/lab3/lab3.css)
+
