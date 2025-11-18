@@ -1,10 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Практична робота №4 – ISO Keyboard</title>
+    <link rel="stylesheet" href="practice4.css">
 </head>
 <body>
+
+<div class="page">
+
+    <header class="page-header">
+        <h1>Практична робота №4</h1>
+        <p>
+            Макет full-size ISO клавіатури. Розмітка з використанням
+            <strong>CSS Grid</strong>, <strong>кастомних шрифтів</strong>,
+            <strong>тіней</strong> та <strong>станів кнопок</strong>.
+        </p>
+    </header>
+
+    <main class="keyboard-wrapper">
+
+        <section class="keyboard">
+
+            <div class="kb-block kb-main">
+
+                <div class="kb-row">
+                    <div class="key key-1u key-accent">Esc</div>
+                    <div class="row-spacer"></div>
+                    <div class="key key-1u">F1</div>
+                    <div class="key key-1u">F2</div>
+                    <div class="key key-1u">F3</div>
+                    <div class="key key-1u">F4</div>
+                    <div class="row-spacer"></div>
+                    <div class="key key-1u">F5</div>
+                    <div class="key key-1u">F6</div>
+                    <div class="key key-1u">F7</div>
+                    <div class="key key-1u">F8</div>
+                    <div class="row-spacer"></div>
+                    <div class="key key-1u">F9</div>
+                    <div class="key key-1u">F10</div>
+                    <div class="key key-1u">F11</div>
+                    <div class="key key-1u">F12</div>
+                </div>
+
+                <div class="kb-row">
+                    <div class="key key-1u">~</div>
+                    <div class="key key-1u">1</div>
+                    <div class="key key-1u">2</div>
+                    <div class="key key-1u">3</div>
+                    <div class="key key-1u">4</div>
+                    <div class="key key-1u">5</div>
+                    <div class="key key-1u">6</div>
+                    <div class="key key-1u">7</div>
+                    <div class="key key-1u">8</div>
+                    <div class="key key-1u">9</div>
+                    <div class="key key-1u">0</div>
+                    <div class="key key-1u">-</div>
+                    <div class="key key-1u">=</div>
+                    <div class="key key-2u">Backspace</div>
+                </div>
+
+                <div class="kb-row">
+                    <div class="key key-1_5u">Tab</div>
+                    <div class="key key-1u">Q</div>
+                    <div class="key key-1u">W</div>
+                    <div class="key key-1u">E</div>
+                    <div class="key key-1u">R</div>
+                    <div class="key key-1u">T</div>
+                    <div class="key key-1u">Y</div>
+                    <div class="key key-1u">U</div>
+                    <div class="key key-1u">I</div>
+                    <div class="key key-1u">O</div>
+                    <div class="key key-1u">P</div>
+                    <div class="key key-1u">[</div>
+                    <div class="key key-1u">]</div>
+                    <div class="key key-1_5u">\</div>
+                </div>
+
+                <div class="kb-row">
+                    <div class="key key-1_75u key-pressed">Caps Lock</div>
+                    <div class="key key-1u">A</div>
+                    <div class="key key-1u">S</div>
+                    <div class="key key-1u">D</div>
+                    <div class="key key-1u">F</div>
+                    <div class="key key-1u">G</div>
+                    <div class="key key-1u">H</div>
+                    <div class="key key-1u">J</div>
+                    <div class="key key-1u">K</div>
+                    <div class="key key-1u">L</div>
+                    <div class="key key-1u">;</div>
+                    <div class="key key-1u">'</div>
+                    <div class="key key-2_25u">Enter</div>
+                </div>
+
+                <div class="kb-row">
+                    <div class="key key-1_25u">Shift</div>
+                    <div class="key key-1u">&lt; &gt;</div>
+                    <div class="key key-1u">Z</div>
+                    <div class="key key-1u">X</div>
+                    <div class="key key-1u">C</div>
+                    <div class="key key-1u">V</div>
+                    <div class="key key-1u">B</div>
+                    <div class="key key-1u">N</div>
+                    <div class="key key-1u">M</div>
+                    <div class="key key-1u">,</div>
+                    <div class="key key-1u">.</div>
+                    <div class="key key-1u">/</div>
+                    <div class="key key-2_75u">Shift</div>
+                </div>
+
+                <div class="kb-row">
+                    <div class="key key-1_25u">Ctrl</div>
+                    <div class="key key-1_25u">Win</div>
+                    <div class="key key-1_25u">Alt</div>
+                    <div class="key key-6_25u key-space">Space</div>
+                    <div class="key key-1_25u">AltGr</div>
+                    <div class="key key-1_25u">Menu</div>
+                    <div class="key key-1_25u">Ctrl</div>
+                </div>
+            </div>
+
+            <div class="kb-block kb-nav">
+                <div class="kb-row">
+                    <div class="key key-1u">Print</div>
+                    <div class="key key-1u">Scroll</div>
+                    <div class="key key-1u">Pause</div>
+                </div>
+                <div class="kb-row">
+                    <div class="key key-1u">Insert</div>
+                    <div class="key key-1u">Home</div>
+                    <div class="key key-1u">PgUp</div>
+                </div>
+                <div class="kb-row">
+                    <div class="key key-1u">Delete</div>
+                    <div class="key key-1u">End</div>
+                    <div class="key key-1u">PgDn</div>
+                </div>
+
+                <div class="kb-row kb-spacer-row"></div>
+
+                <div class="kb-row kb-row-arrows">
+                    <div class="key key-1u key-placeholder"></div>
+                    <div class="key key-1u arrow">↑</div>
+                    <div class="key key-1u key-placeholder"></div>
+                </div>
+                <div class="kb-row kb-row-arrows">
+                    <div class="key key-1u arrow">←</div>
+                    <div class="key key-1u arrow">↓</div>
+                    <div class="key key-1u arrow">→</div>
+                </div>
+            </div>
+
+            <div class="kb-block kb-num">
+                <div class="kb-row">
+                    <div class="key key-1u">Num</div>
+                    <div class="key key-1u">/</div>
+                    <div class="key key-1u">*</div>
+                    <div class="key key-1u">-</div>
+                </div>
+                <div class="kb-row">
+                    <div class="key key-1u">7</div>
+                    <div class="key key-1u">8</div>
+                    <div class="key key-1u">9</div>
+                    <div class="key key-1u key-tall">+</div>
+                </div>
+                <div class="kb-row">
+                    <div class="key key-1u">4</div>
+                    <div class="key key-1u">5</div>
+                    <div class="key key-1u">6</div>
+                    <div class="key key-1u key-tall">Enter</div>
+                </div>
+                <div class="kb-row">
+                    <div class="key key-1u">1</div>
+                    <div class="key key-1u">2</div>
+                    <div class="key key-1u">3</div>
+                </div>
+                <div class="kb-row">
+                    <div class="key key-2u-gap">0</div> <div class="key key-1u">.</div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="legend">
+            <div><span class="legend-box legend-normal"></span> Normal key</div>
+            <div><span class="legend-box legend-hover"></span> Hover</div>
+            <div><span class="legend-box legend-active"></span> Active (pressed)</div>
+            <div><span class="legend-box legend-disabled"></span> Disabled key</div>
+        </section>
+    </main>
+
+</div>
 
 </body>
 </html>

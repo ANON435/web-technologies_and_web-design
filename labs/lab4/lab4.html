@@ -1,10 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №4 – Планер</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="lab4.css">
 </head>
 <body>
+
+<div class="planner-container">
+    <header class="planner-header">
+        <h1>WEEKLY PLAN</h1>
+
+        <div class="header-fields">
+            <div class="header-field">
+                <label for="week-of">WEEK OF</label>
+                <input type="text" id="week-of">
+            </div>
+            <div class="header-field">
+                <label for="healthy-habit">HEALTHY HABIT</label>
+                <input type="text" id="healthy-habit">
+            </div>
+            <div class="header-field">
+                <label for="improvement">ROOM FOR IMPROVEMENT</label>
+                <input type="text" id="improvement">
+            </div>
+        </div>
+    </header>
+
+    <main class="planner-grid">
+
+        <section class="grid-cell" id="goals">
+            <h3>TOP 3 GOALS</h3>
+            <ul>
+                <li><input type="checkbox"><input type="text" class="list-input"></li>
+                <li><input type="checkbox"><input type="text" class="list-input"></li>
+                <li><input type="checkbox"><input type="text" class="list-input"></li>
+            </ul>
+        </section>
+
+        <section class="grid-cell" id="else">
+            <h3>EVERYTHING ELSE</h3>
+            <ul>
+                <li><input type="checkbox"><input type="text" class="list-input"></li>
+                <li><input type="checkbox"><input type="text" class="list-input"></li>
+                <li><input type="checkbox"><input type="text" class="list-input"></li>
+                <li><input type="checkbox"><input type="text" class="list-input"></li>
+                <li><input type="checkbox"><input type="text" class="list-input"></li>
+                <li><input type="checkbox"><input type="text" class="list-input"></li>
+                <li><input type="checkbox"><input type="text" class="list-input"></li>
+                <li><input type="checkbox"><input type="text" class="list-input"></li>
+            </ul>
+        </section>
+
+        <section class="grid-cell" id="next-week">
+            <h3>NEXT WEEK</h3>
+            <ul>
+                <li><input type="checkbox"><input type="text" class="list-input"></li>
+                <li><input type="checkbox"><input type="text" class="list-input"></li>
+            </ul>
+        </section>
+
+        <section class="grid-cell" id="monday">
+            <h3>MONDAY</h3>
+            <textarea></textarea>
+        </section>
+
+        <section class="grid-cell" id="tuesday">
+            <h3>TUESDAY</h3>
+            <textarea></textarea>
+        </section>
+
+        <section class="grid-cell" id="wednesday">
+            <h3>WEDNESDAY</h3>
+            <textarea></textarea>
+        </section>
+
+        <section class="grid-cell" id="thursday">
+            <h3>THURSDAY</h3>
+            <textarea></textarea>
+        </section>
+
+        <section class="grid-cell" id="friday">
+            <h3>FRIDAY</h3>
+            <textarea></textarea>
+        </section>
+
+        <section class="grid-cell" id="saturday">
+            <h3>SATURDAY</h3>
+            <textarea></textarea>
+        </section>
+
+        <section class="grid-cell" id="sunday">
+            <h3>SUNDAY</h3>
+            <textarea></textarea>
+        </section>
+
+    </main>
+</div>
 
 </body>
 </html>
