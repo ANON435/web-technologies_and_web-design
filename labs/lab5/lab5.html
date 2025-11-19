@@ -1,10 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Лабораторна робота №5 – Portfolio Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main/style.css">
+    <link rel="stylesheet" href="lab5.css">
 </head>
-<body>
+<body class="lab5-body">
+
+<header class="lab5-header">
+    <div class="lab5-container lab5-header-inner">
+        <a href="../main/index.html" class="lab5-logo">Anton<span>Portfolio</span></a>
+
+        <nav class="lab5-nav">
+            <a href="#hero" class="lab5-nav-link lab5-nav-link--active">Home</a>
+            <a href="#about" class="lab5-nav-link">About</a>
+            <a href="#projects" class="lab5-nav-link">Projects</a>
+            <a href="#contact" class="lab5-nav-link">Contact</a>
+        </nav>
+
+        <a href="../labs.html" class="lab5-btn lab5-btn--outline">Labs list</a>
+    </div>
+</header>
+
+<main class="lab5-main">
+
+    <section id="hero" class="lab5-hero">
+        <div class="lab5-container lab5-hero-inner">
+            <div class="lab5-hero-text">
+                <p class="lab5-hero-kicker">WEB / UI / FRONT-END</p>
+                <h1>Hi, I’m Anton.<br> I build clean web interfaces.</h1>
+                <p class="lab5-hero-sub">
+                    Це головна сторінка портфоліо, стилізована за шаблоном
+                    <strong>Portfolio UI – Web &amp; Mobile (Home)</strong> з Figma.
+                    Тут зібрані навчальні роботи з курсу “Веб-технології та веб-дизайн”.
+                </p>
+
+                <div class="lab5-hero-actions">
+                    <a href="../labs.html" class="lab5-btn lab5-btn--primary">View labs</a>
+                    <a href="../practices.html" class="lab5-btn lab5-btn--ghost">View practices</a>
+                </div>
+
+            </div>
+
+            <div class="lab5-hero-visual">
+                <div class="lab5-hero-card">
+                    <div class="lab5-hero-contact">
+                        <a href="mailto:antontimovski@gmail.com">antontimovski@gmail.com</a>
+                        <a href="https://github.com/ANON435" target="_blank">github.com/ANON435</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="lab5-section">
+        <div class="lab5-container lab5-about-inner">
+            <div>
+                <h2>About this page</h2>
+                <p>
+                    У межах лабораторної роботи №5 було створено окрему головну сторінку
+                    портфоліо (<code>lab5.html</code>) на основі шаблону Portfolio UI – Web &amp; Mobile (Home).
+                    Макет реалізовано з використанням адаптивної сітки, сучасної типографіки
+                    та карткових блоків.
+                </p>
+                <p>
+                    Сторінка не замінює основну <code>index.html</code>, а існує як окрема
+                    лабораторна робота, що демонструє навички верстки інтерфейсів з Figma.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="lab5-section lab5-section--alt">
+        <div class="lab5-container">
+            <div class="lab5-section-header">
+                <h2>Featured course projects</h2>
+                <p>Кілька прикладів робіт, реалізованих під час вивчення курсу.</p>
+            </div>
+
+            <div class="lab5-projects-grid">
+                <article class="lab5-project-card">
+                    <h3>YouTube main page</h3>
+                    <p>
+                        Копія головної сторінки YouTube з використанням Flexbox: шапка,
+                        ліве меню, панель категорій та сітка відео.
+                    </p>
+                    <div class="lab5-pill-row">
+                        <span class="lab5-pill">Flexbox</span>
+                        <span class="lab5-pill">Layout</span>
+                    </div>
+                    <a href="../labs/lab3/lab3.html" class="lab5-card-link">Open lab 3 →</a>
+                </article>
+
+                <article class="lab5-project-card">
+                    <h3>ISO keyboard layout</h3>
+                    <p>
+                        Повнорозмірна ISO-клавіатура, реалізована на CSS Grid із різними
+                        станами кнопок та кастомним оформленням.
+                    </p>
+                    <div class="lab5-pill-row">
+                        <span class="lab5-pill">CSS Grid</span>
+                        <span class="lab5-pill">UI component</span>
+                    </div>
+                    <a href="../practices/practice4/practice4.html" class="lab5-card-link">Open practice 4 →</a>
+                </article>
+
+                <article class="lab5-project-card">
+                    <h3>Weekly planner</h3>
+                    <p>
+                        Планер “Weekly Plan” з інтерактивними чекбоксами, полями вводу
+                        та сіткою для планування тижня.
+                    </p>
+                    <div class="lab5-pill-row">
+                        <span class="lab5-pill">Forms</span>
+                        <span class="lab5-pill">Grid</span>
+                    </div>
+                    <a href="../labs/lab4/lab4.html" class="lab5-card-link">Open lab 4 →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="lab5-section">
+        <div class="lab5-container lab5-contact-inner">
+            <div>
+                <h2>Contact</h2>
+                <p>
+                    Якщо вам потрібно переглянути вихідний код або приклади верстки —
+                    перейдіть до репозиторію GitHub або напишіть мені на email.
+                </p>
+            </div>
+
+            <div class="lab5-contact-block">
+                <div class="lab5-contact-item">
+                    <span class="lab5-contact-label">Email</span>
+                    <a href="mailto:antontimovski@gmail.com">antontimovski@gmail.com</a>
+                </div>
+                <div class="lab5-contact-item">
+                    <span class="lab5-contact-label">GitHub</span>
+                    <a href="https://github.com/ANON435" target="_blank">github.com/ANON435</a>
+                </div>
+                <div class="lab5-contact-item">
+                    <span class="lab5-contact-label">Back to main</span>
+                    <a href="../main/index.html">Main page</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="lab5-footer">
+    <div class="lab5-container lab5-footer-inner">
+        <span>© 2025 Anton Timovskiy. Lab 5 — Portfolio Home.</span>
+        <a href="../labs.html" class="lab5-footer-link">All lab works</a>
+    </div>
+</footer>
 
 </body>
 </html>
