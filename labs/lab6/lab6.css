@@ -1,0 +1,125 @@
+/* ===== БАЗОВІ СТИЛІ СЦЕНИ ===== */
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.scene {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    /* Небо + плавна зміна кольору (анімація фону) */
+    background: linear-gradient(#6ec6ff, #b3e5fc);
+    animation: skyCycle 16s ease-in-out infinite alternate;
+}
+
+/* День -> вечір */
+@keyframes skyCycle {
+    0% {
+        background: linear-gradient(#6ec6ff, #b3e5fc);
+    }
+    50% {
+        background: linear-gradient(#42a5f5, #81d4fa);
+    }
+    100% {
+        background: linear-gradient(#001848, #283593);
+    }
+}
+
+/* ===== ХМАРИ (анімація фону, чистий CSS) ===== */
+
+.clouds {
+    position: absolute;
+    top: 8%;
+    left: 0;
+    width: 200%;
+    height: 150px;
+
+    background:
+        radial-gradient(circle,
+            rgba(255,255,255,0.9) 40%,
+            rgba(255,255,255,0) 60%)
+        repeat-x;
+    background-size: 180px 120px;
+
+    animation: moveClouds 30s linear infinite;
+}
+
+@keyframes moveClouds {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+/* ===== ЗЕМЛЯ (друга анімація фону) ===== */
+
+.ground {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 200%;
+    height: 30vh;
+
+    background:
+        linear-gradient(#2e7d32, #1b5e20),
+        repeating-linear-gradient(
+            -45deg,
+            rgba(255,255,255,0.18),
+            rgba(255,255,255,0.18) 8px,
+            rgba(255,255,255,0) 8px,
+            rgba(255,255,255,0) 16px
+        );
+    background-blend-mode: overlay;
+
+    animation: moveGround 20s linear infinite;
+}
+
+@keyframes moveGround {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-25%); }
+}
+
+/* ===== СПРАЙТ ПІКАЧУ (sprite sheet + анімація) ===== */
+
+.pokemon {
+    position: absolute;
+    bottom: 18%;
+    left: 50%;
+
+    /* розмір ОДНОГО кадру */
+    width: 134px;
+    height: 155px;
+
+    /* точка опори для стрибка */
+    transform-origin: bottom center;
+
+    /* сам sprite sheet */
+    background-image: url("pikachu-gen1-4-sheet.png");
+    background-repeat: no-repeat;
+
+    /* масштабуємо зображення до рівно 4 кадрів по 134px:
+       134 * 4 = 536, трохи стискаємо 537 → 536 */
+    background-size: 536px 155px;
+
+    image-rendering: pixelated;
+
+    /* 2 анімації: перемикання кадрів + стрибок */
+    animation:
+        spriteWalk 0.7s steps(4) infinite,
+        jump 1.8s ease-in-out infinite;
+}
+
+/* перемикання 4-х кадрів по горизонталі */
+@keyframes spriteWalk {
+    from { background-position:   0px 0; }
+    to   { background-position: -536px 0; } /* 134 * 4 */
+}
+
+/* стрибок вгору-вниз (із масштабом) */
+@keyframes jump {
+    0%, 100% { transform: translate(-50%, 0) scale(1.7); }
+    50%      { transform: translate(-50%, -40px) scale(1.7); }
+}

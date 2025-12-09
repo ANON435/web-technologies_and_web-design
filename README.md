@@ -8,3 +8,4 @@
 - [Практична робота №4](practices/practice4/practice4.html) • [CSS](practices/practice4/practice4.css)
 - [Лабораторна робота №4](labs/lab4/lab4.html) • [CSS](labs/lab4/lab4.css)
 - [Лабораторна робота №5](labs/lab5/lab5.html) • [CSS](labs/lab5/lab5.css)
+- [Лабораторна робота №6](labs/lab6/lab6.html) • [CSS](labs/lab6/lab6.css)
