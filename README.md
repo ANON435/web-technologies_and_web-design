@@ -9,3 +9,5 @@
 - [Лабораторна робота №4](labs/lab4/lab4.html) • [CSS](labs/lab4/lab4.css)
 - [Лабораторна робота №5](labs/lab5/lab5.html) • [CSS](labs/lab5/lab5.css)
 - [Лабораторна робота №6](labs/lab6/lab6.html) • [CSS](labs/lab6/lab6.css)
+- [Лабораторна робота №7](labs/lab7/index.html)
+- [Лабораторна робота №8](labs/lab8/lab8.html)
